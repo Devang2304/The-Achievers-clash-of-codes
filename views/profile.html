@@ -12,11 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Match</title>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg py-3 fixed-top border" style="background-color: #bc9ff2; position: relative;">
         <div class="container">
-            <a href="index.html" class="navbar-brand" style="font-weight: bolder; color: rgb(130, 9, 244);"><img
+            <a href="user.html" class="navbar-brand" style="font-weight: bolder; color: rgb(130, 9, 244);"><img
                     src="../assets/images/bird.png" style="height: 35px; border-right: 10px;">Match</a>
             <div class="right">
                 <a href="history.html"
@@ -26,7 +25,111 @@
             </div>
         </div>
     </nav>
-    
+    <div class="d-flex flex-column align-center justify-center text-center">
+        <h1
+            style="align-items: center; font-size: 3rem; font-weight: bolder; text-transform: capitalize; color: #400c70; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            Edit Profile</h1>
+    </div>
+
+    <section>
+
+
+        <div class="align-center justify-center">
+            <div id="formlayout" class="" style="width: 600px; ">
+                <form id="registration" class="form-horizontal " style="margin-left: auto; margin-right: auto;">
+                    <div class="form-group" style="display: flex; margin: 20px 0; ">
+                        <label class="control-label col-sm-2"> Name:</label>
+                        <div class="col-sm-10">
+                            <input placeholder="Name" type="text" name="name" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group " style="display: flex; margin: 20px 0;">
+                        <label class="control-label col-sm-2"> Username: </label>
+                        <div class="col-sm-10">
+                            <input placeholder="Username" type="text" name="username" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-2"> DOB: </label>
+                        <div class="col-sm-10">
+                            <input placeholder="DOB" type="text" name="dob" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-2"> Gender: </label>
+                        <!-- <input type="radio" name="male" > Male 
+            <input type="radio" name="female" > Female 
+            <input type="radio" name="others" > Others -->
+                        <div class="col-sm-10">
+                            <input placeholder="Gender" type="text" name="gender" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-2"> Contact No: </label>
+                        <div class="col-sm-10">
+                            <input placeholder="Contact No" type="number" name="contact" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-2"> Location: </label>
+                        <div class="col-sm-10">
+                            <input placeholder="Location" type="text" name="location" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-2"> Email: </label>
+                        <div class="col-sm-10">
+                            <input placeholder="Email" type="email" id="email" name="email" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-2"> Password: </label>
+                        <div class="col-sm-10">
+                            <input placeholder="Password" type="Password" id="pass" name="password"
+                                class="form-control" />
+                        </div>
+                    </div>
+                    <div style="margin: auto;" class="d-flex align-center">
+
+                        <input type="button" value="Submit" class="btn btn-primary" style="
+                    margin: auto;
+                    border-radius: 10px;
+                    padding: 15px 20px;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    background-color: #7a64d0;
+                    width: 120px;
+                    " />
+                    </div>
+
+                    <!-- <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            
+                        </div>
+                    </div> -->
+
+                    <p>Have an account? <a href="login.html">Login Here</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <footer class="p-3 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Match</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-3">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer> -->
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
