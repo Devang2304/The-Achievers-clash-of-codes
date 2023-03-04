@@ -1,0 +1,26 @@
+{
+  "name": "the-achievers-clash-of-codes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devang2304/The-Achievers-clash-of-codes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devang2304/The-Achievers-clash-of-codes/issues"
+  },
+  "homepage": "https://github.com/Devang2304/The-Achievers-clash-of-codes#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
