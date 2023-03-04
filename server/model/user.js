@@ -9,6 +9,14 @@ var schema=new mongoose.Schema({
         type:String,
         required:true
     },
+    age:{
+        type:Number,
+        required:true
+    },
+    gender:{
+        type:String,
+        required:true
+    },
     location:{
         type:String,
         required:true
@@ -25,6 +33,7 @@ var schema=new mongoose.Schema({
         type:String,
         required:true
     }
+
 })
 
 const user=mongoose.model('user', schema)
