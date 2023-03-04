@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Information</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg py-3 fixed-top border" style="background-color: #bc9ff2; position: relative;">
+        <div class="container">
+            <a href="user.html" class="navbar-brand" style="font-weight: bolder; color: rgb(130, 9, 244);"><img
+                    src="../assets/images/bird.png" style="height: 35px; border-right: 10px;">Match</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="align-center justify-center">
+            <div id="formlayout" class="" style="width: 600px; ">
+                <form id="registration" class="form-horizontal " style="margin-left: auto; margin-right: auto;">
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Whom do you want to search? </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Male" name="whom">
+                                <label for="Male">Male</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Female" name="whom">
+                                <label for="Female">Female</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Others" name="whom">
+                                <label for="Others">Others</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5"> Emojis you use the most: </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="smiling" name="emoji">
+                                <label for="smiling">&#128522</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="hug" name="emoji">
+                                <label for="hug">&#129303</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="crying" name="emoji">
+                                <label for="crying">&#128557</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="partying" name="emoji">
+                                <label for="partying">&#129395</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Who do you reply first: </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="mom" name="reply">
+                                <label for="mom">Mom</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="friend" name="reply">
+                                <label for="friend">Friend</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="coworker" name="reply">
+                                <label for="coworker">Coworker</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Do You </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="work_to_live" name="work_live">
+                                <label for="work_to_live">Work to live</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="live_to_work" name="work_live">
+                                <label for="live_to_work">Live to work</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">word in which your friends describe you: </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Happy" name="friend">
+                                <label for="Happy">Happy</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Naughty" name="friend">
+                                <label for="Naughty">Naughty</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Emotional" name="friend">
+                                <label for="Emotional">Emotional</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Choose One </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Instagram" name="insta_net">
+                                <label for="Instagram">Instagram</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Netflix" name="insta_net">
+                                <label for="Netflix">Netflix</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Choose One </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Early_Bird" name="bird_owl">
+                                <label for="Early_Bird">Early Bird</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Night_Owl" name="bird_owl">
+                                <label for="Night_Owl">Night Owl</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Like pets? </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Yes_pets" name="pet">
+                                <label for="Yes_pets">Yes</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="No_pets" name="pet">
+                                <label for="No_pets">No</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Like to travel: </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Always_travel" name="travel">
+                                <label for="Always_travel">Always</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Sometimes_travel" name="travel">
+                                <label for="Sometimes_travel">Sometimes</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Never_travel" name="travel">
+                                <label for="Never_travel">Never</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Had relationship earlier? </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Yes_relation" name="relationship">
+                                <label for="Yes_relation">Yes</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="No_relation" name="relationship">
+                                <label for="No_relation">No</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">how would you like to spend Sundays?</label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="at_home" name="sunday">
+                                <label for="at_home">At home</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="travelling" name="sunday">
+                                <label for="travelling">Travelling</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">choose one : </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Always_travel" name="movie_serial_tv">
+                                <label for="Always_travel">Movies</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Sometimes_travel" name="movie_serial_tv">
+                                <label for="Sometimes_travel">Serials</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Never_travel" name="movie_serial_tv">
+                                <label for="Never_travel">TV shows</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Enjoy going to parties? </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Always_party" name="party">
+                                <label for="Always_party">Always</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Sometimes_party" name="party">
+                                <label for="Sometimes_party">Sometimes</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Never_party" name="party">
+                                <label for="Never_party">Never</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Love tattoos? </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Yes_tattoo" name="tattoo">
+                                <label for="Yes_tattoo">Yes</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="No_tattoo" name="tattoo">
+                                <label for="No_tattoo">No</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Love Music? </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Always_music" name="music">
+                                <label for="Always_music">Always</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Sometimes_music" name="music">
+                                <label for="Sometimes_music">Sometimes</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Never_music" name="music">
+                                <label for="Never_music">Never</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5">Current Employement Status </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="employee" name="employement">
+                                <label for="employee">employee</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="business_person" name="employement">
+                                <label for="business_person">Business Person</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="No_workt" name="employement">
+                                <label for="No_workt">No work</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <label class="control-label col-sm-5"> Preffered Location: </label>
+
+                        <div class="col-sm-10" style="display: flex;">
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Bangalore" name="location">
+                                <label for="Bangalore">Bangalore</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Mumbai" name="location">
+                                <label for="Mumbai">Mumbai</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Delhi" name="location">
+                                <label for="Delhi">Delhi</label>
+                            </div>
+
+                            <div style="margin: 0px 10px;">
+                                <input type="radio" id="Pune" name="location">
+                                <label for="Pune">Pune</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group" style="display: flex;margin: 20px 0;">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <input
+                            type="button"
+                            value="Submit"
+                            class="btn btn-primary"
+                            style="
+                              margin: auto;
+                              border-radius: 10px;
+                              padding: 15px 20px;
+                              font-size: 1.1rem;
+                              font-weight: 500;
+                              background-color: #7a64d0;
+                              width: 120px;
+                            "
+                          />
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-3 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2023 Match</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

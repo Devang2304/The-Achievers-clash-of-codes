@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.unit{
+    padding: 15px 0;
+}
+.q{
+    padding-bottom: 5px;
+}
+.a{
+    opacity: .85;
+}
