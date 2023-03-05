@@ -1,100 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <form method="post" action="/register"class="mx-auto my-5 col-10 col-md-8 col-lg-6">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Name</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
-          </div>
 
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Age</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="age">
-          </div>
-          <label for="form-check ">Gender</label>
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" value="Male" checked>
-            <label class="form-check-label" for="flexRadioDefault1">
-              Male
-            </label>
-          </div>
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" value="Female">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Female
-            </label>
-          </div>
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault3" value="Other">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Other
-            </label>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Location</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="location">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Contact No.</label>
-            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="contact">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-          </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Match</title>
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Match</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>-->
+  <nav class="navbar navbar-expand-lg py-3 fixed-top border" style="background-color: #bc9ff2; position: relative;">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" style="font-weight: bolder; color: rgb(130, 9, 244);"><img src="css/images/bird.png" style="height: 35px; border-right: 10px;">Match</a>
+      <div class="right">
+        <a href="index.html" style="background-color: #1b0476; margin-right: 5px; padding: 7.5px 15px; border-radius: 10px; color: white; text-decoration: none;">Home</a>
+        <a href="faq.html" style="background-color: #5331da; margin-right: 5px; padding: 7.5px 15px; border-radius: 10px; color: white; text-decoration: none;">FAQ</a>
+        <a href="register.html" style="background-color: #5331da; margin-right: 5px; padding: 7.5px 15px; border-radius: 10px; color: white; text-decoration: none;">Sign up</a>
+        <a href="login.html" style="background-color: #5331da; margin-right: 5px; padding: 7.5px 15px; border-radius: 10px; color: white; text-decoration: none;">Login</a>
+      </div>
+    </div>
+  </nav>
+  <section class="color p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+      <div
+        class="welcome-home d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+        <img class="img-fluid d-block one" src="css/images/home-img.png" alt="">
+        <div class="d-flex flex-column align-center justify-center text-center">
+          <h1
+            style="font-size: 3rem; font-weight: bolder; text-transform: capitalize; color: #400c70; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            It is never too late to fall in love.</h1>
+          <h4 style="color: #531e85;" class="py-3">One day, someone will walk into your life and make you see why it
+            never worked out with someone else.</h4>
+          <button
+            style="margin: auto; border-radius: 10px; padding: 15px 20px; font-size: 1.1rem; font-weight: 500; background-color: #7a64d0;">Find
+            a Love</button>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </section>
+  <section class="p-5">
+    <div class="container">
+      <h1 class="text-center" style="font-family: monospace; font-weight: bold; color: rgb(92,53,53);">Match. Chat. Date
+      </h1>
+      <div class="row">
+        <div class="col col-12 col-md-6 p-3">
+          <div class="col col-12 p-3 color rounded-4">
+            <img src="css/images/phone.png" style="height: 45px;" alt="">
+            <h2 style="font-weight: bolder;" class="py-3">Love can happen anywhere</h2>
+            <h3>On the train, in a corner cafe or on an app. You never know who you might meet and how this might change
+              you. Love is risky</h3>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 p-3">
+          <div class="col col-12 p-3 color rounded-4">
+            <img src="css/images/letter.png" style="height: 45px;" alt="">
+            <h2 style="font-weight: bolder;" class="py-3">Everything At A Glance</h2>
+            <h3>With the nearby list, you can see who is near you and online at any time. All that's left now is for
+              someone to take the first step.</h3>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 p-3">
+
+          <div class="col col-12 p-3 color rounded-4">
+            <img src="css/images/love.png" style="height: 45px;" alt="">
+            <h2 style="font-weight: bolder;" class="py-3">Get Chatting</h2>
+            <h3>The first message counts! The Icebreaker is your chance to break the ice and start a conversation</h3>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 p-3">
+
+          <div class="col col-12 p-3 color rounded-4">
+            <img src="css/images/key.png" style="height: 45px;" alt="">
+            <h2 style="font-weight: bolder;" class="py-3">More Than Just A Swipe</h2>
+            <h3>In the game Match, you decide with a simple Yes-No who you'd be interested in getting to know. If you
+              two have a Match.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="color" style="padding-top: 1rem;">
+    <div>
+      <h1 class="section-header">User Review <span>Lets Hear What Our Users Say!</span>
+      </h1>
+      <div class="testimonials">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="single-item">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="profile">
+                      <div class="img-area">
+                        <img src="css/images/1.jpg" alt="">
+                      </div>
+                      <div class="bio">
+                        <h2>Dave Wood</h2>
+                        <h4>Web Developer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="content">
+                      <p><span><i class="fa fa-quote-left"></i></span>I was hesitant to try another dating app, but this
+                        one blew me away. The matches were spot-on, and the interface was easy to use. I'm happy to say
+                        I met my current partner on this app!</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="single-item">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="profile">
+                      <div class="img-area">
+                        <img src="css/images/2.jpg" alt="">
+                      </div>
+                      <div class="bio">
+                        <h2>Martin Guptill</h2>
+                        <h4>Student</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="content">
+                      <p><span><i class="fa fa-quote-left"></i></span>I've tried a lot of dating apps in the past, but
+                        this one is hands-down my favorite. The conversation starters were a lifesaver for someone like
+                        me who can be shy, and the premium features were definitely worth it</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="single-item">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="profile">
+                      <div class="img-area">
+                        <img src="css/images/3.jpg" alt="">
+                      </div>
+                      <div class="bio">
+                        <h2>Amelia Jones</h2>
+                        <h4>Graphic Designer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="content">
+                      <p><span><i class="fa fa-quote-left"></i></span>As a busy professional, I don't have a lot of time
+                        to sift through profiles and messages on dating apps. This app makes it easy - the matches are
+                        based on shared interests and location, so I know I'm not wasting my time.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+      <div
+        class="welcome-home d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+        <div class="d-flex flex-column align-center justify-center text-center">
+          <h1
+            style="font-size: 3rem; font-weight: bolder; text-transform: capitalize; color: #400c70; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            More than Characters</h1>
+          <h4 style="color: #531e85;" class="py-3">Chater makes being single more fun and rewarding by connecting people
+            who may not have otherwise met in real life.</h4>
+          <button
+            style="margin: auto; border-radius: 10px; padding: 15px 20px; font-size: 1.1rem; font-weight: 500; background-color: #7a64d0;">Get
+            Started</button>
+        </div>
+        <img class="img-fluid d-block one" src="css/images/hug.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer class="p-3 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2023 Match</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-3">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- <footer class="p-3 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2023 Work-Connect</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-3">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer> -->
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
