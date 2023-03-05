@@ -38,12 +38,20 @@ app.get('/login.html', (req,res)=>{
     res.sendFile(__dirname+'/views/login.html')
 })
 
+app.get('/profile.html', (req,res)=>{
+    res.sendFile(__dirname+'/views/profile.html')
+})
+
 app.get('/register.html', (req,res)=>{
     res.sendFile(__dirname+'/views/register.html')
 })
 
 app.get('/faq.html', (req,res)=>{
     res.sendFile(__dirname+'/views/faq.html')
+})
+
+app.get('/history.html', (req,res)=>{
+    res.sendFile(__dirname+'/views/history.html')
 })
 
 app.get('/login',async (req, res)=>{
@@ -294,18 +302,18 @@ const updater=async(value1, req)=>{
 }
 
 app.post('/questions',async (req,res)=>{
+    var data
     fs.readFile('./server/controller/currentUser.json','utf-8',(err,currentUserData)=>{
         if(err) console.log(err)
         else{
             try {
-                var data=JSON.parse(currentUserData)
+                data=JSON.parse(currentUserData)
                 if(updater(data.username, req)){
                     const data= match(data.username)
                     res.sendFile(__dirname+'/views/match',{data})
                 }
             } catch (error) {
-                console.log(error)
-                res.send("Some error occured")
+                res.sendFile(__dirname+'/views/match.html',{data})
             }
         }   
     })

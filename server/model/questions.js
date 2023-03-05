@@ -2,8 +2,7 @@ const mongoose = require("mongoose")
 
 var schema=new mongoose.Schema({
     username:{
-        type:String,
-        required:true
+        type:String
     },
     location:{
         type:String,
